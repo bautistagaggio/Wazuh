@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "name": "agent_1",
+        "version": "4.1.5",
+        "os": "ubuntu 20.04",
+        "inventory": ["nano", "git", "aws-cli"],
+        "modules": {
+            "fim": {"status": "enabled", "frequency": 5, "eps": 100},
+            "syscollector": {"status": "enabled", "frequency": 10, "eps": 20},
+            "rootcheck": {"status": "disabled", "frequency": 20, "eps": 40},
+            "winevt": {"status": "disabled", "frequency": 12, "eps": 300},
+            "logcollector": {"status": "disabled", "frequency": 5, "eps": 20}
+        },
+        "status": "active"
+    },
+    {
+        "id": 2,
+        "name": "agent_2",
+        "version": "4.1.3",
+        "os": "debian 10",
+        "inventory": ["firefox", "slack", "docker", "vagrant"],
+        "modules": {
+            "fim": {"status": "enabled", "frequency": 15, "eps": 100},
+            "syscollector": {"status": "enabled", "frequency": 10, "eps": 10},
+            "rootcheck": {"status": "enabled", "frequency": 20, "eps": 20},
+            "winevt": {"status": "disabled", "frequency": 25, "eps": 50},
+            "logcollector": {"status": "enabled", "frequency": 5, "eps": 30}
+        },
+        "status": "active"
+    },
+    {
+        "id": 3,
+        "name": "agent_3",
+        "version": "4.0.4",
+        "os": "ubuntu focal",
+        "inventory": ["vscode", "meld", "remmina"],
+        "modules": {
+            "fim": {"status": "disabled", "frequency": 15, "eps": 300},
+            "syscollector": {"status": "enabled", "frequency": 10, "eps": 10},
+            "rootcheck": {"status": "enabled", "frequency": 25, "eps": 20},
+            "winevt": {"status": "disabled", "frequency": 25, "eps": 50},
+            "logcollector": {"status": "disabled", "frequency": 15, "eps": 30}
+        },
+        "status": "active"
+    },
+    {
+        "id": 4,
+        "name": "agent_4",
+        "version": "4.0.1",
+        "os": "centos 8",
+        "inventory": ["virtualbox", "git", "atom"],
+        "modules": {
+            "fim": {"status": "disabled", "frequency": 25, "eps": 100},
+            "syscollector": {"status": "enabled", "frequency": 12, "eps": 80},
+            "rootcheck": {"status": "enabled", "frequency": 5, "eps": 60},
+            "winevt": {"status": "disabled", "frequency": 35, "eps": 70},
+            "logcollector": {"status": "enabled", "frequency": 55, "eps": 20}
+        },
+        "status": "disconnected"
+    },
+    {
+        "id": 5,
+        "name": "agent_5",
+        "version": "4.1.2",
+        "os": "windows",
+        "inventory": ["git, aws-cli", "firefox"],
+        "modules": {
+            "fim": {"status": "enabled", "frequency": 15, "eps": 100},
+            "syscollector": {"status": "enabled", "frequency": 22, "eps": 30},
+            "rootcheck": {"status": "enabled", "frequency": 15, "eps": 50},
+            "winevt": {"status": "enabled", "frequency": 25, "eps": 180},
+            "logcollector": {"status": "enabled", "frequency": 35, "eps": 25}
+        },
+        "status": "active"
+    }
+]
